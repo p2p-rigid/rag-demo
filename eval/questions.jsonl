@@ -1,0 +1,5 @@
+{"question": "What exclusions apply to Zurich Motor Insurance?", "expected_source": "zurich_motor_insurance_pds.pdf", "notes": "Motor policy exclusions and conditions."}
+{"question": "How do I make a claim under Ezicover Life Insurance?", "expected_source": "zurich_ezicover_life_insurance_pds.pdf", "notes": "Direct life insurance claims process."}
+{"question": "Who is the target market for Zurich Home Loan Protection?", "expected_source": "zurich_home_loan_protection_tmd.pdf", "notes": "Target market determination question."}
+{"question": "What information is required for a professional indemnity claim?", "expected_source": "zurich_professional_indemnity_claims_guideline.pdf", "notes": "Claims reporting guideline."}
+{"question": "Does the business insurance policy include flood cover?", "expected_source": "zurich_business_insurance_policy.pdf", "notes": "Business insurance policy wording."}

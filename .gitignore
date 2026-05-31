@@ -1,0 +1,17 @@
+.env
+.venv/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+
+# Local/generated project artifacts
+data/
+screenshots/
+wsl
+HANDOFF.md
+IMPLEMENTATION_PLAN.md
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
