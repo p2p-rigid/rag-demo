@@ -1,8 +1,12 @@
-# Zurich Insurance RAG Study
+# Policy Document RAG Demo
 
-Learning project for a retrieval-augmented generation pipeline over public Zurich Australia insurance documents.
+Learning project for a retrieval-augmented generation pipeline over public insurance policy documents.
 
 The pipeline loads extracted policy text, chunks it with metadata from `manifest.csv`, stores chunks and lightweight local hashing embeddings in SQLite, retrieves relevant passages, and asks DeepSeek to generate a cited answer.
+
+## Sample Output
+
+![Sample RAG output](docs/sample-output-rag.png)
 
 ## Setup
 
@@ -34,8 +38,8 @@ python -m scripts.inspect_db
 ## Ask A Question
 
 ```bash
-python -m scripts.ask --retrieve-only "What exclusions apply to Zurich Motor Insurance?"
-python -m scripts.ask --retrieve-only --show-chunks "What exclusions apply to Zurich Motor Insurance?"
+python -m scripts.ask --retrieve-only "What exclusions apply to motor insurance?"
+python -m scripts.ask --retrieve-only --show-chunks "What exclusions apply to motor insurance?"
 python -m scripts.ask "Does the business insurance policy include flood cover?"
 ```
 
@@ -51,8 +55,8 @@ The evaluation checks whether the expected document appears in the top retrieved
 
 ## Data
 
-Documents are stored under `data/zurich_insurance`. The pipeline reads the pre-extracted text files under `data/zurich_insurance/text` and metadata from `data/zurich_insurance/manifest.csv`.
+Documents are stored under the configured data directory. The pipeline reads pre-extracted text files and metadata from `manifest.csv`.
 
 ## Limitations
 
-This is not legal, financial, or insurance advice. Public Zurich documents may not match a specific customer policy schedule, endorsement, or quote-specific term. Page-level citation is not implemented yet. DeepSeek output is generated text and should not be treated as authoritative policy interpretation.
+This is not legal, financial, or insurance advice. Public documents may not match a specific customer policy schedule, endorsement, or quote-specific term. Page-level citation is not implemented yet. DeepSeek output is generated text and should not be treated as authoritative policy interpretation.
